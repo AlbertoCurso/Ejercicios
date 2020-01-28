@@ -1,1 +1,0 @@
-print ("¿Te duele la cabeza? []")

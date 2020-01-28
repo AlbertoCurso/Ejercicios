@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Diagnóstico</title>
+    <script src="./js/doctor.js"></script>
 </head>
+
 <body>
-    <input type="checkbox" id = "dolordecabeza" value="dolordecabeza">¿Dolor de Cabeza?
-    <br>
-    <input type="checkbox" id = "fiebre" value="fiebre">¿Fiebre?
-    <br>
-    <input type="checkbox" id = "origen" value="origen">¿Viene de China?
-    <br>
-    <input type="button" value = "Diagnosticar">
+    <div>
+        <img src="./imagenes/KoalaBatman.jpg" alt="">
+        <input type="checkbox" id = "dolordecabeza" value="dolordecabeza">¿Dolor de Cabeza?
+        <br>
+        <input type="checkbox" id = "fiebre" value="fiebre">¿Fiebre?
+        <br>
+        <input type="checkbox" id = "origen" value="origen">¿Viene de China?
+        <br>
+        <input type="button" value = "Diagnosticar" onclick="diagnosticar()">
+    </div>
 </body>
 </html>

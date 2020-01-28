@@ -20,12 +20,12 @@ int main(int argc, char const *argv[])
         char    variableCaracter    =   'a'; /* Si es un caracter se usa comilla simple */
         char    variableString[]      =   "El gato come peras"; /* Si es una cadena se usan comillas simples */
 
-        printf("%d/N",variableCorta);
-        printf("%d/N",variableEntera);
-        printf("%d/N",variableLarga);
-        printf("%f/N",variableFlotante);
-        printf("%f/N",variableDoble);
-        printf("%c/N",variableCaracter);
+        printf("%d\n",variableCorta);
+        printf("%d\n",variableEntera);
+        printf("%d\n",variableLarga);
+        printf("%f\n",variableFlotante);
+        printf("%f\n",variableDoble);
+        printf("%c\n",variableCaracter);
 
     return 0;
 }
