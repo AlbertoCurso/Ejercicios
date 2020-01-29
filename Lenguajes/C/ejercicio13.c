@@ -69,6 +69,7 @@ int main(int argc, char const *argv[])
         } while (validarInputs(colInput) != 0);
 
         // Grabamos el dato y Mostramos Tablero
+
         tablero[filaInput][colInput] = 'O';
         mostrarTablero();
 
@@ -134,14 +135,80 @@ int validarTresEnRaya()
 {
     int contadorX = 0;
     int contadorO = 0;
+    int salida = 0;
 
+    // Validamos que se haya hecho 3 en raya en las filas
     for (fila = 0; fila < DIMENSION; fila++)
     {
         for (col = 0; col < DIMENSION; col++)
         {
-            if (tablero)
+            if (tablero[fila][col] == 'X')
+            {
+                contadorX++;
+            }
+            if (tablero[fila][col] == 'O')
+            {
+                contadorO++;
+            }
         }
-        
+        if (contadorX == 3)
+        {
+            salida = 1;
+        }
+
+        if (contadorO == 3)
+        {
+            salida = 2;
+        }
     }
-    
+
+    // Validamos que se haya hecho 3 en raya en las columnas
+    if (salida == 0)
+    {
+        contadorX = 0;
+        contadorO = 0;
+        fila = 0;
+        col = 0;
+        for (col = 0; col < DIMENSION; col++)
+        {
+            for (fila = 0; fila < DIMENSION; fila++)
+            {
+                if (tablero[fila][col] == 'X')
+                {
+                    contadorX++;
+                }
+                if (tablero[fila][col] == 'O')
+                {
+                    contadorO++;
+                }
+            }
+            if (contadorX == 3)
+            {
+                salida = 1;
+            }
+
+            if (contadorO == 3)
+            {
+                salida = 2;
+            }
+        }
+    }
+
+    // Validamos que se haya hecho 3 en raya en las diagonales
+    if (salida == 0)
+    {
+        if (((tablero[0][0] == 'X') && (tablero[1][1] == 'X') && (tablero[2][2] == 'X')) ||
+            ((tablero[0][2] == 'X') && (tablero[1][1] == 'X') && (tablero[2][0] == 'X')))
+        {    
+            salida = 1;
+        }
+
+        if (((tablero[0][0] == 'O') && (tablero[1][1] == 'O') && (tablero[2][2] == 'O')) ||
+            ((tablero[0][2] == 'O') && (tablero[1][1] == 'O') && (tablero[2][0] == 'O')))
+        {    
+            salida = 2  ;
+        }
+    }
+
+    return salida;
 }
