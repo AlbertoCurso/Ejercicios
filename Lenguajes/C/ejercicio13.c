@@ -151,6 +151,8 @@ int validarTresEnRaya()
                 contadorO++;
             }
         }
+        printf("%d", contadorX);        
+        printf("%d", contadorO);        
         if (contadorX == 3)
         {
             salida = 1;
@@ -160,6 +162,8 @@ int validarTresEnRaya()
         {
             salida = 2;
         }
+        contadorX = 0;
+        contadorO = 0;
     }
 
     // Validamos que se haya hecho 3 en raya en las columnas
@@ -192,6 +196,8 @@ int validarTresEnRaya()
                 salida = 2;
             }
         }
+        contadorX = 0;
+        contadorO = 0;
     }
 
     // Validamos que se haya hecho 3 en raya en las diagonales
