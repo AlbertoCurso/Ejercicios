@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>SuperCiceKarts</title>
+	<link rel="stylesheet" href="./css/estilo.css">
+	<script type="text/javascript" src="./js/juego.js"></script>
+</head>
+<body onload="inicializar()" onkeyup="capturarPulsacion(event)">
+	<div>
+		<img id="logo" src="./imagenes/logo.gif">
+	</div>
+
+	<div>
+		<img id="player1" class= "player" src="./imagenes/mercedes1.png" onmouseenter="zoom(1)" onmouseleave="antizoom(1)">
+	</div>
+
+	<div>
+		<img id="player2" class= "player" src="./imagenes/mclaren1.png" onmouseenter="zoom(2)" onmouseleave="antizoom(2)">
+	</div>
+	<div>
+		<h1 id = "campeon"></h1>
+	</div>
+	<div id = "meta">
+
+	</div>
+
+</body>
+</html>
