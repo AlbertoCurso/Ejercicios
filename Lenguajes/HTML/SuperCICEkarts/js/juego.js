@@ -3,8 +3,8 @@ console.log("Jugando...");
 var posPlayer1 = 0;
 var posPlayer2 = 0;
 var jugando = true;
-const SPEED = 10;
-const META = 100;
+const SPEED = 50;
+const META = 800;
 
 function inicializar()
 {
@@ -71,6 +71,14 @@ function capturarPulsacion(tecla)
 			//alert("Ha ganado el Player 2");
 			document.getElementById("campeon").innerHTML="HA GANADO EL PLAYER 2";
 			jugando = false;
+		}
+
+		if (jugando == false)
+		{
+			var audio = document.getElementById("audio");
+			audio.play();
+			var v = document.getElementsByTagName("video")[0];
+			v.play();
 		}
 	} 
 }

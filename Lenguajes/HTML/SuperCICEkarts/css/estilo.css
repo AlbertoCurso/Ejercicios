@@ -9,10 +9,19 @@
 
 #meta {
 	position: absolute;
-	top: 200px;
+	top: 100px;
 	left: 500px;
-	width: 20px;
+	width: 200px;
 	height: 150px;
-	background-color: black;
 	float: right;
 }
+
+#audio{
+	display: none
+	}
+
+#video{
+	display: none
+	}
+
+	

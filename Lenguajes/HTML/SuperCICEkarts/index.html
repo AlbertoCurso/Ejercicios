@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<title>SuperCiceKarts</title>
 	<link rel="stylesheet" href="./css/estilo.css">
 	<script type="text/javascript" src="./js/juego.js"></script>
 </head>
+
 <body onload="inicializar()" onkeyup="capturarPulsacion(event)">
 	<div>
 		<img id="logo" src="./imagenes/logo.gif">
 	</div>
 
 	<div>
-		<img id="player1" class= "player" src="./imagenes/mercedes1.png" onmouseenter="zoom(1)" onmouseleave="antizoom(1)">
+		<img id="player1" class="player" src="./imagenes/mercedes1.png" onmouseenter="zoom(1)"
+			onmouseleave="antizoom(1)">
 	</div>
 
 	<div>
-		<img id="player2" class= "player" src="./imagenes/mclaren1.png" onmouseenter="zoom(2)" onmouseleave="antizoom(2)">
+		<img id="player2" class="player" src="./imagenes/mclaren1.png" onmouseenter="zoom(2)"
+			onmouseleave="antizoom(2)">
 	</div>
 	<div>
-		<h1 id = "campeon"></h1>
+		<h1 id="campeon"></h1>
 	</div>
-	<div id = "meta">
-
+	<div id="meta">
+		<img id="meta" src="./imagenes/MetaDcha.png">
+		<audio id="audio" controls>
+			<source type="audio/mp3" src="./Audios/aplausos_4.mp3">
+		</audio>
+		<video id="video" controls>
+			<source src="./Videos/Copa del rey - atletico de madrid levantando la copa.mp4" type="video/mp4">
+			<code>video</code>
+		</video>
 	</div>
 
 </body>
+
 </html>
