@@ -1,0 +1,22 @@
+#textNombre {
+    padding: 1em;
+    background-color: black;
+    color: orange;
+    font-weight: bold;
+}
+
+#textNombre:hover {
+    background-color: firebrick;
+    color: white;
+}
+
+#valor {
+    color: red;
+    font: bold;
+}
+
+#cars {
+    background-color: black;
+    color: orange;
+    
+}

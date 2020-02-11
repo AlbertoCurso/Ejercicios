@@ -1,0 +1,38 @@
+#rojo {
+    color: red;
+}
+
+.azul {
+    color: blue;
+}
+
+.rojo {
+    color: red;
+}
+
+#salarios thead, #salarios tfoot {
+    background-color: rgb(15, 97, 100);
+    color: white
+}
+
+#salarios {
+    width: 100%;
+}
+
+#salarios th, #salarios td{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.derecha {
+    text-align: right;
+    padding-right: 2em;
+}
+
+#salarios tbody tr:nth-child(even) {
+    background: #CCC;
+}
+
+#salarios tbody tr:nth-child(odd) {
+    background: rgb(189, 147, 8);
+}

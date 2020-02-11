@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Ejercicio HTML</title>
+</head>
+
+<body>
+    <div>Sección</div>
+    El contenedor <span id="rojo">sin &nbsp; &nbsp; &nbsp; &nbsp; salto de línea</span> se marca con span.
+    <br><!-- Salto de Línea-->
+    <p>Esto es un párrafo</p>
+    <p>Esto es un párrafo</p>
+    <h1>Encabezado de tipo 1</h1>
+    <h2>Encabezado de tipo 2</h2>
+    <h3>Encabezado de tipo 3</h3>
+    <h4>Encabezado de tipo 4</h4>
+    <h5>Encabezado de tipo 5</h5>
+    <h6>Encabezado de tipo 6</h6>
+    <h7>Encabezado de tipo 7</h7>
+    <!--ETIQUETAS SEMÁNTICAS, https://www.w3schools.com/html/html5_semantic_elements.asp-->
+    <article>Esto es un artículo</article> <!-- se diferencia del div en el nombre, se llama procesamiento semántico-->
+    <article>Esto es otro artículo</article>
+    <header>Cabecera</header>
+    <header>Otra Cabecera</header>
+    <footer>Pie de documento</footer>
+    <aside>Texto que está en un lado</aside>
+    <nav>Suele incluir el menú de navegación de la parte superior</nav>
+    <section>Delimita una sección</section>
+    <figure>
+        <img src="./imagenes/Atleti.JPG" alt="Escudo nuevo del Atlético de Madrid">
+        <figcaption>Escudo del Atlético de Madrid</figcaption>
+    </figure>
+    <!-- TABLAS-->
+    <table border="10">
+        <tr>
+            <!--FILAS (Cabecera)-->
+            <th align="center">Dorsal</th>
+            <th align="center">Nombre</thalign="center">
+            <th align="center">Goles</th>
+        </tr>
+
+        <tr>
+            <!--segunda fila que es primera-->
+            <td align="center">10</td>
+            <td align="center"><span class="azul">M</span><span class="rojo">e</span><span class="azul">s</span><span
+                    class="rojo">s</span><span class="azul">i</span></td>
+            <td align="center">42</td>
+        </tr>
+
+        <tr>
+            <!--tercera fila que es segunda fila-->
+            <td align="center">9</td>
+            <td align="center">Benzema</td>
+            <td align="center">15</td>
+        </tr>
+
+        <tr>
+            <!--tercera fila que es segunda fila-->
+            <td align="center">7</td>
+            <td align="center">Joao Félix</td>
+            <td align="center">3</td>
+            <td align="center">Otra Celda</td>
+        </tr>
+
+        <tr>
+            <!--tercera fila que es segunda fila-->
+            <td align="center">7</td>
+            <td align="center">Joao Félix</td>
+            <td align="center"></td>
+            <td align="center">Otra Celda</td>
+        </tr>
+
+        <tr>
+            <!--tercera fila que es segunda fila-->
+            <td align="center">7</td>
+            <td align="center">Joao Félix</td>
+            <td colspan="2" align="center">3</td>
+        </tr>
+
+        <tr>
+            <!--tercera fila que es segunda fila-->
+            <td align="center">7</td>
+            <td align="center">Joao Félix</td>
+            <td></td>
+            <td rowspan="2" align="center">Otra Celda</td>
+        </tr>
+
+        <tr>
+            <!--tercera fila que es segunda fila-->
+            <td align="center">7</td>
+            <td align="center">Joao Félix</td>
+            <td align="center">3</td>
+        </tr>
+    </table>
+
+    <h1>OTRO FORMATO DE TABLA, semantic</h1>
+    <table id="salarios">
+        <thead>
+            <tr>
+                <th>Jugador</th>
+                <th class="derecha">Salario ($)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td class="derecha">Suma</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Messi</td>
+                <td class="derecha">40.000.000</td>
+            </tr>
+            <tr>
+                <td>costa</td>
+                <td class="derecha">10.000.000</td>
+            </tr>
+            <tr>
+                <td>costa</td>
+                <td class="derecha">10.000.000</td>
+            </tr>
+            <tr>
+                <td>costa</td>
+                <td class="derecha">10.000.000</td>
+            </tr>
+            <tr>
+                <td>costa</td>
+                <td class="derecha">10.000.000</td>
+            </tr>
+            <tr>
+                <td>costa</td>
+                <td class="derecha">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Ramos</td>
+                <td class="derecha">18.000.000</td>
+            </tr>
+        </tbody>
+</body>
+
+</html>
