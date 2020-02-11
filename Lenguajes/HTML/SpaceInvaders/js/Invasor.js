@@ -14,21 +14,36 @@ class Invasor{
         this.y = y;
         this.alto = alto;
         this.ancho = ancho;
-        this.velocidad = velocidad;
     }
 
-    mover() {
-        this.x = this.x + this.velocidad;
+    mover(velocidad) {
+        this.x = this.x + velocidad;
         ctx.drawImage(this.aspecto, this.x, this.y, this.alto, this.ancho)
-        console.log(this.x);
-        if (this.x >= 100)
+        if (this.x >= 720 || this.x <= 0)
         {
-            this.velocidad = -5
+            velocidad = velocidad * -1;
         }
-        if (this.x <= 0)
+        return velocidad;
+    }
+
+    mover2(velocidad3) {
+        this.x = this.x + velocidad3;
+        ctx.drawImage(this.aspecto, this.x, this.y, this.alto, this.ancho)
+        if (this.x >= 720 || this.x <= 0)
         {
-            this.velocidad = +5
+            velocidad3 = velocidad3 * -1;
         }
+        return velocidad3;
+    }
+
+    mover3(velocidad5) {
+        this.x = this.x + velocidad5;
+        ctx.drawImage(this.aspecto, this.x, this.y, this.alto, this.ancho)
+        if (this.x >= 720 || this.x <= 0)
+        {
+            velocidad5 = velocidad5 * -1;
+        }
+        return velocidad5;
     }
 
     disparar() {
