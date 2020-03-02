@@ -1,0 +1,9 @@
+***********************************************************
+TITULO: 		EL EXORCISTA
+DIRECTOR:		Alejandro
+DURACION:		121 Minutos
+SINOPSIS:		Una niña está posesa por el demonio
+Hay sangre
+No hay zombies
+Nivel de terror:	10
+***********************************************************
