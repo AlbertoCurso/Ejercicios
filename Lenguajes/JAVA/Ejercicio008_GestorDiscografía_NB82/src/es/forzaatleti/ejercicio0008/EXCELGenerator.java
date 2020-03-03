@@ -7,23 +7,20 @@ import java.io.PrintWriter;
  *
  * @author Desiapi
  */
-public class HTMLGenerator {
-
-    public static void generarHTML(Disco disco, String ruta) {
+public class EXCELGenerator {
+        public static void generarEXCEL(Disco disco, String ruta) {
         try {
-            String nombreFichero = disco.getTitulo() + ".html";
+            String nombreFichero = disco.getTitulo() + ".xls";
             nombreFichero = nombreFichero.replace(' ', '_');
 
             // Apertura fichero
             PrintWriter pw = new PrintWriter(new File(nombreFichero));
 
             // Contenido del fichero
-            pw.println("<html><head></head><body><div>");
-            pw.println("<h1>Título: " + disco.getTitulo() + "</h1>");
-            pw.println("<h2>Artista: " + disco.getArtista() + "</h2>");
-            pw.println("<img src='" + disco.getCaratula() + "' width='300px' height='300px'></img>");
-            pw.println("<h2>Precio: " + disco.getPrecio() + "</h2>");
-            pw.println("<h3>Canciones: </h2>");
+            pw.println("Titulo: \t" + disco.getTitulo() + "\n");
+            pw.println("Artista: \t" + disco.getArtista() + "\n");
+            pw.println("Precio: \t" + disco.getPrecio() + "\n\n");
+            pw.println("Canciones:");
 
             //Alternativa 1 - MÁS CUTRE
             /*
@@ -48,13 +45,13 @@ public class HTMLGenerator {
             
             //Alternativa 3 - Alternativa COOL
             for (Cancion c : disco.getCanciones()) {
-                pw.println("<p>"
+                pw.println("\t"
                         + c.getOrdinal()
-                        + "-"
+                        + "\t"
                         + c.getTitulo()
-                        + " Duración:"
+                        + "Duracion: \t"
                         + c.getDuracion()
-                        + "</p>");
+                        + " \t Minutos");
             }
             //Fin de alternativa 3            pw.print("</div></body></html>");
 
