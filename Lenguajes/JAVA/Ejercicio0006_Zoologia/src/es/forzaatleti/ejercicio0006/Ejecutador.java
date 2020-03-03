@@ -1,13 +1,15 @@
-package es.forzaatleti.ejercicio0006;
+package com.fernandopaniagua.ejercicio6;
 
-/**
- *
- * @author Alberto Prado Iglesias
- */
 public class Ejecutador {
     public static void main(String[] args) {
         Mamifero ramon = new Mamifero();
+        ramon.reproducir();
         ramon.comer();
         ramon.mamar();
+        
+        Reptil juancho = new Reptil();
+        juancho.reproducir();
+        juancho.comer();
+        juancho.hibernar();
     }
 }
